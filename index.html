@@ -1,33 +1,181 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <title>Formulaire de Contact</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio - Responsable Commercial</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f9fb;
+      color: #333;
+    }
+    header {
+      background-image: url("https://drive.google.com/thumbnail?id=1Wvx_FrmPLxU_tnx5rt4VLArSaz3735Ab&sz=s800");
+      color: #003c5a;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 0.5rem 0;
+    }
+    section {
+      background: white;
+      margin: 1.5rem auto;
+      padding: 2rem;
+      max-width: 900px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #003c5a;
+      margin-top: 0;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    .case {
+      background: #eaf4f8;
+      padding: 1rem;
+      margin-top: 1rem;
+      border-left: 5px solid #00749e;
+    }
+    blockquote {
+      margin: 1rem 0;
+      padding: 1rem;
+      background: #f1f1f1;
+      border-left: 5px solid #ccc;
+      font-style: italic;
+    }
+    .contact a {
+      color: #003c5a;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #003c5a;
+      color: white;
+      font-size: 0.9rem;
+    }
+    td{
+	float:center;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.6rem 1rem;
+      margin-top: 0.8rem;
+      background-color: #00749e;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.2s;
+    }
+    .btn:hover {
+      background-color: #005f80;
+  </style>
 </head>
 <body>
-    <h1>Contactez-nous</h1>
-    <form id="contact-form">
-        <label for="name">Nom :</label>
-        <input type="text" id="name" name="name" required><br><br>
-        
-        <label for="email">Email :</label>
-        <input type="email" id="email" name="email" required><br><br>
-        
-        <label for="message">Message :</label>
-        <textarea id="message" name="message" required></textarea><br><br>
-        
-        <input type="submit" value="Envoyer">
-    </form>
 
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec'
-        const form = document.forms['contact-form']
-        
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => alert('Formulaire soumis avec succès!'))
-                .catch(error => console.error('Erreur!', error.message))
-        })
-    </script>
+  <header>
+    <h1>MOUYABI  Antefel</h1>
+    <h2 style="color: #fff">Responsable Développement Commercial</h2>
+    <h2 style="color: #fff">📞 07 44 25 12 95 | ✉️ mouyabimakitaa@gmail.com | <a href="#" style="color: #fff; text-decoration: underline;">LinkedIn</a></h2>
+  </header>
+
+  <section>
+    <h2>À propos de moi</h2>
+    <p>Je combine trois qualités clés : l'écoute, la stratégie et la persévérance.<br/><br/> D’abord, l’écoute, c’est la base de mon approche. Comprendre réellement les besoins du client, c’est ce qui me permet de proposer une solution adaptée.<br/><br/> Ensuite, je suis orienté résultats mais toujours dans une logique de qualité. Je sais construire un discours commercial solide, basé sur une bonne connaissance du marché, de mes produits, et de la concurrence.<br/><br/> Enfin, je suis persévérant et positif, deux atouts essentiels dans ce métier. Les cycles de vente peuvent être longs, les refus nombreux, mais je sais rester motivé et apprendre de chaque expérience. Je transforme les objections en opportunités, et je ne me décourage pas face aux défis.<br/><br/> Au-delà de ça, je suis aussi un joueur d’équipe. J’aime collaborer avec le marketing, le service client ou les équipes produits pour aligner les efforts et maximiser les chances de succès. </p>
+  </section>
+
+
+  <section>
+    <h2>Réalisations</h2>
+
+    <div class="case">
+    <table>
+    <tr>
+     <td width="60%">     
+      <h3>+35% de CA en 1 an</h3>
+      <p>Refonte de l'offre et activation de leviers digitaux ciblés.</p>
+      <a href="documents/presentation_ca.pdf" class="btn" download>Télécharger la présentation PDF</a>
+     </td>
+     <td scope="col"><img src="https://drive.google.com/thumbnail?id=1mfm2XlzXXAmawaISeJ_Df0pqCi95J95q&sz=s800" width="40%" height="100%"></td>
+  </tr>
+    </table>
+    </div>
+
+    <div class="case">
+    <table>
+    <tr>
+     <td width="60%">  
+      <h3>Ouverture de 15 grands comptes</h3>
+      <p>Stratégie d’approche multicanale, social selling et suivi personnalisé.</p>
+      <a href="documents/strategie_comptes.pptx" class="btn" download>Télécharger le PowerPoint</a>
+     </td>
+     <td scope="col"><img src="https://drive.google.com/thumbnail?id=1mfm2XlzXXAmawaISeJ_Df0pqCi95J95q&sz=s800" width="40%" height="100%"></td>
+  </tr>
+    </table>
+    </div>
+
+    <div class="case">
+    <table>
+    <tr>
+     <td width="60%">  
+      <h3>Étude de marché secteur retail</h3>
+      <p>Analyse concurrentielle et ciblage d’opportunités régionales.</p>
+      <a href="documents/etude_retail.pdf" class="btn" download>Télécharger l’étude PDF</a>
+     </td>
+     <td scope="col"><img src="https://drive.google.com/thumbnail?id=1mfm2XlzXXAmawaISeJ_Df0pqCi95J95q&sz=s800" width="40%" height="100%"></td>
+  </tr>
+    </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Témoignages</h2>
+    <blockquote>
+      "Un vrai moteur dans l'équipe commerciale. Il sait transformer une opportunité en succès durable." – Directrice Commerciale
+    </blockquote>
+    <blockquote>
+      "Excellent relationnel et esprit d’analyse. Il a boosté notre présence sur de nouveaux marchés." – Client B2B secteur tech
+    </blockquote>
+  </section>
+
+  <section>
+    <h2>Compétences clés</h2>
+  <table>
+   <tr>
+   <td width="60%">
+     <ul>    
+      <li>Prospection multicanal et social selling</li>
+      <li>Négociation & closing grands comptes</li>
+      <li>CRM (Salesforce, HubSpot), KPIs & reporting</li>
+      <li>Stratégie commerciale et analyse de marché</li>
+     </ul>
+    </td>
+   <th scope="col"><img src="https://drive.google.com/thumbnail?id=1mfm2XlzXXAmawaISeJ_Df0pqCi95J95q&sz=s800" width="40%" height="100%"></th>
+  </tr>
+  </table> 
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Je suis ouvert à de nouveaux défis ! N'hésitez pas à me contacter :</p>
+    <p><a href="mailto:mouyabimakitaa@gmail.com">mouyabimakitaa@gmail.com</a></p>
+    <p><a>07 44 25 12 95</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Antefel - Commercial Polyvalent
+  </footer>
+
 </body>
 </html>
